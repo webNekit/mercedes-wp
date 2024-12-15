@@ -1,0 +1,76 @@
+.hero-section {
+    width: 100%;
+    padding-block-start: 120px;
+    padding-block-end: 78px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
+    &__row {
+        &--top {}
+        &--bottom {
+            margin-block-start: auto;
+            padding-block-start: 120px;
+        }
+    }
+    &__information {
+        width: 100%;
+        padding-block-end: 42px;
+        display: flex;
+        justify-content: flex-end;
+        &-title {
+            margin: 0;
+            padding: 0;
+            max-width: 45%;
+            text-align: right;
+            @include lg {
+                max-width: 100%;
+            }
+        }
+    }
+    &__footer {
+        position: relative;
+        width: 100%;
+        padding-block-start: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include lg {
+            flex-direction: column;
+            align-items: start;
+        }
+        gap: var(--gap);
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            max-width: 100vw;
+            height: 1px;
+            background-color: hsla(var(--primary), .2);
+        }
+        &-text {
+            max-width: 50%;
+            @include lg {
+                max-width: 100%;
+            }
+        }
+        &-button {
+            @include lg { 
+                width: 100%; 
+                padding-block: 16px;
+            }
+        }
+    }
+    &__title {
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        @include heading("2xl");
+    }
+}

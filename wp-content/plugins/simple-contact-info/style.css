@@ -1,0 +1,15 @@
+.contact-info {
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.contact-info p {
+    margin: 5px 0;
+}
+.contact-info a {
+    color: #0073aa;
+    text-decoration: none;
+}
+.contact-info a:hover {
+    text-decoration: underline;
+}

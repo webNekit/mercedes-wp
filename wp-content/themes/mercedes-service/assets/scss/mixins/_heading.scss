@@ -1,0 +1,19 @@
+@mixin heading($type: "2xl") {
+    @if $type == "2xl" {
+        font-size: clamp(2rem, -0.5833rem + 6.6667vw, 5rem);
+        font-weight: var(--font-semibold);
+        font-family: var(--ff-secondary);
+    } @else if $type == "xl" {
+        font-size: clamp(1.625rem, 0.0104rem + 4.1667vw, 3.5rem);
+        font-weight: var(--font-semibold);
+        font-family: var(--ff-secondary);
+    } @else if $type == "lg" {
+        font-size: clamp(1.125rem, 0.3715rem + 1.9444vw, 2rem);
+        font-weight: var(--font-semibold);
+        font-family: var(--ff-secondary);
+    } @else if $type == "md" {
+        font-size: clamp(1rem, 0.5694rem + 1.1111vw, 1.5rem);
+        font-weight: var(--font-semibold);
+        font-family: var(--ff-secondary);
+    }
+}

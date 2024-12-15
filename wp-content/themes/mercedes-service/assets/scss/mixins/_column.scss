@@ -1,0 +1,75 @@
+@mixin col($count: 12, $gap: 24px, $min: 2) {
+    @if $count == 12 {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        gap: $gap;
+        @include xl {
+            grid-template-columns: repeat(8, minmax(0, 1fr));
+        }
+        @include lg {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+        @include md {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        @include sm {
+            grid-template-columns: repeat($min, minmax(0, 1fr));
+        }
+    }
+    @else if $count == 8 {
+        display: grid;
+        grid-template-columns: repeat(8, minmax(0, 1fr));
+        gap: $gap;
+        @include xl {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+        @include lg {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        @include md {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        @include sm {
+            grid-template-columns: repeat($min, minmax(0, 1fr));
+        }
+    }
+    @else if $count == 6 {
+        display: grid;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: $gap;
+        @include xl {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+        @include lg {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+        @include md {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+        @include sm {
+            grid-template-columns: repeat($min, minmax(0, 1fr));
+        }
+    }
+    @else if $count == 4 {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: $gap;
+        @include md {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @include sm {
+            grid-template-columns: repeat($min, minmax(0, 1fr));
+        }
+    }
+    @else if $count == 3 {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: $gap;
+        @include md {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @include sm {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+        }
+    }
+}

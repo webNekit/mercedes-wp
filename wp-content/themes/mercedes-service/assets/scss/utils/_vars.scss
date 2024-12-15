@@ -1,0 +1,55 @@
+:root {
+  // colors
+  --background: 0, 0%, 4%;
+  --foreground: 0, 0%, 99%;
+  --card: 0, 0%, 11%;
+  --card-foreground: 0, 0%, 87%;
+  --popover: 0, 0%, 11%;
+  --popover-foreground: 0, 0%, 87%;
+  --primary: 0, 0%, 100%;
+  --primary-foreground: 0, 0%, 4%;
+  --secondary: 0, 0%, 9%;
+  --secondary-foreground: 0, 0%, 87%;
+  --muted: 0, 0%, 20%;
+  --muted-foreground: 0, 0%, 100%;
+  --accent: 0, 0%, 100%;
+  --accent-foreground: 0, 0%, 26%;
+  --destructive: 0, 75%, 46%;
+  --destructive-foreground: 210, 40%, 98%;
+  --border: 0, 0%, 14%;
+  --input: 0, 0%, 14%;
+  --ring: 0, 0%, 100%;
+  --chart-1: 0, 100%, 99%;
+  --chart-2: 215, 20.2%, 65.1%;
+  --chart-3: 217.2, 32.6%, 17.5%;
+  --chart-4: 212.7, 26.8%, 83.9%;
+  --chart-5: 0, 62.8%, 30.6%;
+  // radis defalut
+  --radius: 7px;
+  // hover opacity
+  --hover: 0.85;
+  // gap
+  --gap: 24px;
+  // container
+  --content: 1340px;
+  --container-offset: 20px;
+  --container-width: calc(var(--content) + (var(--container-offset) * 2));
+  // fonts-family
+  --ff-primary: "Nunito", serif;
+  --ff-secondary: "Montserrat", sans-serif;
+  // typography
+  --text-base: 16px;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+  // rounded 
+  --rounded-sm: 4px;
+  --rounded-md: 8px;
+  --rounded-lg: 12px;
+  --rounded-xl: 16px;
+  --rounded-2xl: 24px;
+  --rounded-full: 50%;
+}

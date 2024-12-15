@@ -1,0 +1,51 @@
+@mixin flex-row($type: "center-start", $gap: var(--gap)) {
+    @if $type == "center-start" {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: $gap;
+    } @else if $type == "center-end" {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: $gap;
+    } @else if $type == "center-center" {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: $gap;
+    } @else if $type == "center-between" {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: $gap;
+    }
+}
+
+@mixin flex-col($type: "center-start", $gap: 24px) {
+    @if $type == "center-start" {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == "center-end" {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == "center-center" {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: $gap;
+    } @else if $type == "center-between" {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: $gap;
+    }
+}
